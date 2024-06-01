@@ -144,6 +144,38 @@ Footer h3 {
 
 }
 
+/* Menu Css */
+div.items {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    border: 1px solid black;
+
+}
+
+div.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 13%;
+    border: 1px solid black;
+    /* box-sizing: border-box; */
+}
+
+div.week-special {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    border: 1px solid black;
+}
 @media only screen and (max-width: 800px) {
     .navbar{
         padding: 1%;

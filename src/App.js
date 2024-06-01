@@ -4,6 +4,7 @@ import Nav from './components/Nav';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Bookingform from './components/Bookingform';
+import Menu from './components/Menu';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       {/* <Header/>
       <Footer/> */}
       <Bookingform/>
+      <Menu/>
     </div>
   );
 };
