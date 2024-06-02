@@ -176,6 +176,35 @@ div.week-special {
     padding: 0 1em;
     border: 1px solid black;
 }
+
+/* Booking form css */
+div.myform {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 10px 13%;
+    border: 1px solid black;
+}
+
+div.myform form {
+    border: 1px solid black;
+}
+
+div.fitem {
+    border: 1px solid black;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+form input {
+    width: 150px;
+
+}
+
 @media only screen and (max-width: 800px) {
     .navbar{
         padding: 1%;
@@ -218,5 +247,10 @@ div.week-special {
 
     nav ul li a {
         color: white;
+    }
+
+    div.fitem {
+        width: 100%;
+    
     }
   }

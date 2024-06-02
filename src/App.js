@@ -13,7 +13,7 @@ const App = () => {
       {/* <Header/>
       <Footer/> */}
       <Bookingform/>
-      <Menu/>
+      {/* <Menu/> */}
     </div>
   );
 };
