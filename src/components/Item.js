@@ -4,7 +4,7 @@ const Item = (props) => {
     const { name, price, description } = props.food;
   
   return (
-    <div>
+    <div className='item'>
         {/* <img src={props.imgage}></img> */}
         <h5>{name}</h5>
         <h5>{price}</h5>

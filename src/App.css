@@ -115,21 +115,28 @@ h2 {
 /* Footer css */
 Footer {
     display: flex;
-    align-items: top;
-    padding: 10px 13%;
-    justify-content: space-between;
-    border: 1px solid black;
-
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-block: 10px;
+    padding-inline: 13% 10%;
+    border: 1px solid blue;
 }
 
-Footer div {
+
+Footer div.holder {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid green;
+    width: 100%;
+    flex-wrap: nowrap;
+    margin: 0;
+}
+
+Footer div.flist, div.logo-des {
     padding-inline: 1em;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
     width: 100%;
-    padding: 0 1em;
-
 }
 
 Footer ul{
@@ -141,7 +148,6 @@ Footer ul{
 Footer h3 {
         font-size: 1em;
         border: 1px solid black;
-
 }
 
 /* Menu Css */
@@ -206,8 +212,9 @@ form input {
 }
 
 @media only screen and (max-width: 800px) {
+
     .navbar{
-        padding: 1%;
+        padding: 0;
         flex-wrap: wrap;
     }
 
@@ -253,4 +260,50 @@ form input {
         width: 100%;
     
     }
+    /* Footer css */
+    Footer {
+        padding: 0;
+    }
+    Footer div.holder {
+        padding: 1px 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    Footer div {
+        padding-inline: 0;
+    
+    }
+
+    /* Menu css */
+    div.menu {
+        padding: 0px ;
+        align-items: flex-start;
+    }
+
+    div.week-special {
+        padding: 0;
+    }
+
+    div.items {
+        width: 100%;
+        display: block;
+        border: 1px solid blue;
+        align-items: left;
+        padding-inline: 0%;
+    }
+
+    div.item {
+        padding-left: 5%;
+        border: 1px solid green;
+    }
+
+    /* Header css */
+    Header {
+        padding: 0;
+    }
+
+
+
   }
