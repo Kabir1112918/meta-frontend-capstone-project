@@ -5,7 +5,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Bookingform from './components/Bookingform';
 import Menu from './components/Menu';
-// import Testimonial from './components/Testimonial';
+import BookingConfirm from './components/BookingConfirm';
+
 
 const App = () => {
   return (
@@ -13,9 +14,9 @@ const App = () => {
       <Nav/>
       <Header/>
       <Menu/>
-      {/* <Testimonial/> */}
       <Footer/>
       {/* <Bookingform/> */}
+      {/* <BookingConfirm/> */}
       
     </div>
   );

@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 
-const Bookingform = () => {
+const Bookingform = (props) => {
 
   return (
-    <div className='myform'>
+    <div className='myform' ref={props.bform}>
+      {/* <h1>{props.bform}</h1> */}
       <form action="#" method="post">
         <div className='fitem'>
           <label for="date">Date:</label>

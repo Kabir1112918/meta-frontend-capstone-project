@@ -18,7 +18,7 @@ const Nav = () => {
         <div className='bar'></div>
       </button>
 
-      <ul className={`nav-links ${menuState ? "visible" : ""}`}>
+      <ul className={`nav-links ${menuState ? "open" : ""}`}>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Servies</a></li>

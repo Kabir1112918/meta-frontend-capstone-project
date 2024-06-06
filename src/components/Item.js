@@ -9,7 +9,7 @@ const Item = (props) => {
         <h5>{name}</h5>
         <h5>{price}</h5>
         <p>{description}</p>
-        <a>Order a delivery</a>
+        <button>Order a delivery</button>
         {/* <img src={props.icon}></img> */}
     </div>
   );

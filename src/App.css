@@ -59,8 +59,8 @@ Header {
     display: flex;
     flex-direction: column;
     align-items: left;
-    padding-left: 10%;
-    padding-top: 5%;
+    padding-inline: 5%;
+    padding-top: 3%;
     border: 1px solid black;
 }
 
@@ -80,7 +80,7 @@ h2 {
     margin-bottom: 30px;
 }
 
-.banner-left button {
+.banner-left button{
     background-color: #F4CE14;
     color: black;
     padding: 14px 18px;
@@ -95,11 +95,12 @@ h2 {
 
 .banner-right {
     width: 250px;
-    height: 300px;
-    position: absolute;
+    height: 350px;
+    /* position: absolute;
     right: 20%;
-    top: 35%;
+    top: 35%; */
     border: 1px solid red;
+    margin-block: 3%;
 }
 
 
@@ -114,12 +115,16 @@ h2 {
 
 /* Footer css */
 Footer {
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
     padding-block: 10px;
     padding-inline: 13% 10%;
+    /* padding: 10px 13%; */
     border: 1px solid blue;
+    
 }
 
 
@@ -183,15 +188,31 @@ div.week-special {
     border: 1px solid black;
 }
 
+div.menu button {
+    background-color: #F4CE14;
+    color: black;
+    padding: 10px 14px;
+    border: none;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content;
+
+}
+
 /* Booking form css */
+
 div.myform {
-    display: flex;
+    display: none;
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-between;
     align-items: left;
     padding: 10px 13%;
     border: 1px solid black;
+    padding-bottom: 5%;
 }
 
 div.myform form {
@@ -203,6 +224,7 @@ div.fitem {
     width: 40%;
     display: flex;
     justify-content: space-between;
+    margin-block: 1%;
 
 }
 
@@ -211,8 +233,37 @@ form input {
 
 }
 
+/* booking confirm dialogbox css */
+div.dialogbox {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 16px;
+    background-color: lightcyan;
+}
+
+div.dialog-btn {
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-between;
+    width: 60%;
+
+}
+
+div.dialogbox > * {
+    border: 1px solid green;
+    margin-block: 2%;
+}
+
+
 @media only screen and (max-width: 800px) {
 
+    /* Nav css */
     .navbar{
         padding: 0;
         flex-wrap: wrap;
@@ -283,8 +334,13 @@ form input {
     }
 
     div.week-special {
-        padding: 0;
+        flex-direction: column;
+        align-items: left;
+        border: 1px solid green;
+        width: 100%;
+        box-sizing: border-box;
     }
+
 
     div.items {
         width: 100%;
@@ -302,6 +358,10 @@ form input {
     /* Header css */
     Header {
         padding: 0;
+    }
+
+    Header div.banner-right {
+        display: none;
     }
 
 
