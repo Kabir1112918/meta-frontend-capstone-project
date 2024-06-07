@@ -6,9 +6,14 @@ const Header = () => {
   const bform = useRef();
   const myheader = useRef();
 
-  const headerToggle = () => {
+  const openForm = () => {
     myheader.current.style.display = 'none';
     bform.current.style.display = 'flex';
+  }
+
+  const closeForm = () => {
+    myheader.current.style.display = 'flex';
+    bform.current.style.display = 'none';
   }
 
   return (
@@ -22,7 +27,7 @@ const Header = () => {
             dish at our delightful culinary retreat. Embrace
             the zestful journey that awaits.
           </p>
-          <button onClick={headerToggle}>Reserve Table</button>
+          <button onClick={openForm}>Reserve Table</button>
         </div>
 
         <div className={'banner-right'}>
@@ -30,7 +35,7 @@ const Header = () => {
         </div>
 
       </header>
-      <Bookingform bform={bform}/>
+      <Bookingform bform={bform} closeForm={closeForm}/>
     </>
   );
 };

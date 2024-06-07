@@ -15,6 +15,7 @@ const Bookingform = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     openModal(); // Open the modal when the form is submitted
+    props.closeForm();
   };
 
   return (
