@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import BookingConfirm from './BookingConfirm';
+import alertIcon from '../assets/alertIcon.png';
+import yesIcon from '../assets/yesIcon.png';
 
 const Item = (props) => {
     const { name, price, description } = props.food;
@@ -16,7 +18,7 @@ const Item = (props) => {
     };
 
     const openSecondModal = () => {
-        setFirstModalIsOpen(false); // Close the first modal
+        setFirstModalIsOpen(false);
         setSecondModalIsOpen(true);
     };
 
@@ -26,17 +28,19 @@ const Item = (props) => {
 
     return (
         <div className='item'>
-            {/* Your item content */}
-            <h5>{name}</h5>
+
+            <img src={props.image} width='90%' height='90%'></img>
+            <h5 >{name}</h5>
             <h5>{price}</h5>
             <p>{description}</p>
             <button onClick={openFirstModal}>Order a delivery</button>
-            {/* <img src={props.icon}></img> */}
+            
+
+
 
             <Modal className='firstModal' isOpen={firstModalIsOpen} onRequestClose={closeFirstModal}>
-                {/* Modal content */}
                 <div className='dialogbox'>
-                    <img src={'#'} width='100px' height='100px'></img>
+                    <img src={alertIcon} width='100%' height='100%'></img>
                     <h2>Are you sure, you want to order it?</h2>
                     <p>you won't be able to cancel it.</p>
                     <div className='dialog-btn'>
@@ -47,9 +51,8 @@ const Item = (props) => {
             </Modal>
 
             <Modal className='secondModal' isOpen={secondModalIsOpen} onRequestClose={closeSecondModal}>
-                {/* Second Modal content */}
                 <div className='dialogbox'>
-                    <img src={'#'} width='100px' height='100px'></img>
+                    <img src={yesIcon} width='100%' height='100%'></img>
                     <h2>Your order successfully placed.</h2>
                     <p>you will get it within 30 minutes</p>
                     <div className='dialog-btn'>

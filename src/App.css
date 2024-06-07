@@ -6,8 +6,30 @@ body {
     overflow-y: scroll;
 }
 
+body button {
+    background-color: #F4CE14;
+    color: black;
+    padding: 10px 14px;
+    border: none;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content;
+}
+
+button:hover {
+    border: 1px solid black;
+}
+
 a {
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .navbar {
@@ -81,16 +103,9 @@ h2 {
 }
 
 .banner-left button{
-    background-color: #F4CE14;
-    color: black;
     padding: 14px 18px;
-    border: none;
-    text-decoration: none;
     border-radius: 12px;
     font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    width: fit-content;
 }
 
 .banner-right {
@@ -189,16 +204,9 @@ div.week-special {
 }
 
 div.menu button {
-    background-color: #F4CE14;
-    color: black;
     padding: 10px 14px;
-    border: none;
-    text-decoration: none;
     border-radius: 12px;
     font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    width: fit-content;
 
 }
 
@@ -213,6 +221,8 @@ div.myform {
     padding: 10px 13%;
     border: 1px solid black;
     padding-bottom: 5%;
+    background-color: #EDEFEE;
+    font-weight: bold;
 }
 
 div.myform form {
@@ -233,6 +243,14 @@ form input {
 
 }
 
+button.form-btn {
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-size: 15px;
+    margin-left: 60%;
+    width: 80%;
+}
+
 /*dialogbox css */
 div.dialogbox {
     width: 100%;
@@ -251,7 +269,6 @@ div.dialog-btn {
     display: flex;
     border: 2px solid black;
     justify-content: space-between;
-    align-items: center;
     width: 60%;
 
 }
@@ -274,6 +291,12 @@ div.dialogbox > * {
    
 }
 
+
+.secondModal button {
+    width: 100%;
+}
+
+
 .bFormModal {
     width: 80%;
     height: fit-content;
@@ -285,7 +308,10 @@ div.dialogbox > * {
     transform: translate(-50%, -50%);
 }
 
-
+.bFormModal button {
+    width: 50%;
+    margin-inline: 25%;
+}
 
 
 @media only screen and (max-width: 800px) {
@@ -390,7 +416,6 @@ div.dialogbox > * {
     Header div.banner-right {
         display: none;
     }
-
 
 
   }

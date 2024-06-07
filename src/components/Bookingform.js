@@ -42,7 +42,7 @@ const Bookingform = (props) => {
           </select>
         </div>
         <div className='fitem'>
-          <button type="submit">Make your reservations</button>
+          <button className='form-btn' type="submit">Reserve</button>
         </div>
       </form>
 
@@ -57,7 +57,7 @@ const Bookingform = (props) => {
           <h2>Booking Confirmation</h2>
           <p>your Table reservation done successfully</p>
           <div className='dialog-btn'>
-            <button onClick={closeModal}>Okay</button>
+            <button  onClick={closeModal}>Okay</button>
           </div>
         </div>
       </Modal>

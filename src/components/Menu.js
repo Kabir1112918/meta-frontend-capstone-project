@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import Item from './Item';
+import greeksalad from '../assets/greeksalad.jpg';
+import bruchetta from '../assets/bruchetta.jpg';
+import lemondesert from '../assets/lemondesert.jpg';
 
 const Menu = () => {
     const [food, setfood] = useState([
@@ -25,9 +28,9 @@ const Menu = () => {
         </div>
 
         <div className='items'>
-            <Item food={food[0]}/>
-            <Item food={food[1]}/>
-            <Item food={food[2]}/>
+            <Item food={food[0]} image={greeksalad}/>
+            <Item food={food[1]} image={bruchetta}/>
+            <Item food={food[2]} image={lemondesert}/>
         </div>
     </div>
   );
