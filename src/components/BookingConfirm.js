@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const BookingConfirm = () => {
+const BookingConfirm = (props) => {
 
   return (
     <div className='dialogbox'>
@@ -8,8 +8,8 @@ const BookingConfirm = () => {
       <h2>Are you sure?</h2>
       <p>you won't be able to cancel it.</p>
       <div className='dialog-btn'>
-        <button>Back</button>
-        <button>OKay</button>
+        <button onClick={props.handleCancel}>Back</button>
+        <button onClick={props.handleOk}>OKay</button>
       </div>
     </div>
   );

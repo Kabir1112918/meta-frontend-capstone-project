@@ -1,35 +1,65 @@
 import React, { useRef, useState } from 'react';
+import Modal from 'react-modal';
 
 const Bookingform = (props) => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    openModal(); // Open the modal when the form is submitted
+  };
 
   return (
     <div className='myform' ref={props.bform}>
-      {/* <h1>{props.bform}</h1> */}
-      <form action="#" method="post">
+      <form onSubmit={handleSubmit}>
         <div className='fitem'>
-          <label for="date">Date:</label>
+          <label htmlFor="date">Date:</label>
           <input type="date" id="date" name="date" />
         </div>
         <div className='fitem'>
-          <label for="time">Time:</label>
+          <label htmlFor="time">Time:</label>
           <input type="time" id="time" name="time" />
         </div>
         <div className='fitem'>
-          <label for="quantity">Number of Guests (max: 10):</label>
+          <label htmlFor="quantity">Number of Guests (max: 10):</label>
           <input type="number" id="quantity" name="quantity" min="1" max="10" />
         </div>
         <div className='fitem'>
-          <label for="dropdown">Ocassion:</label>
+          <label htmlFor="dropdown">Occasion:</label>
           <select id="dropdown" name="dropdown">
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
+            <option value="Normal">Option 1</option>
+            <option value="Dating">Option 2</option>
+            <option value="Kitty party">Option 3</option>
           </select>
         </div>
         <div className='fitem'>
           <button type="submit">Make your reservations</button>
         </div>
       </form>
+
+      {/* Modal */}
+      <Modal
+        className='bFormModal'
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Booking Confirmation"
+      >
+        <div className='dialogbox'>
+          <h2>Booking Confirmation</h2>
+          <p>your Table reservation done successfully</p>
+          <div className='dialog-btn'>
+            <button onClick={closeModal}>Okay</button>
+          </div>
+        </div>
+      </Modal>
     </div>
   );
 };
