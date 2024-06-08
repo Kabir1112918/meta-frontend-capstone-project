@@ -32,6 +32,7 @@ a:hover {
     font-weight: bold;
 }
 
+/* Nav css */
 .navbar {
     display: flex;
     flex-wrap: nowrap;
@@ -39,6 +40,10 @@ a:hover {
     align-items: center;
     padding: 10px 13%;
     border: 1px solid black;
+}
+
+nav img.logo {
+    padding-top: 0.4em;
 }
 
 nav ul li {
@@ -111,9 +116,6 @@ h2 {
 .banner-right {
     width: 250px;
     height: 350px;
-    /* position: absolute;
-    right: 20%;
-    top: 35%; */
     border: 1px solid red;
     margin-block: 3%;
 }
@@ -159,6 +161,14 @@ Footer div.flist, div.logo-des {
     width: 100%;
 }
 
+div.logo-des {
+    padding-top: 1em;
+}
+
+div.logo-des img {
+    width: 70%;
+}
+
 Footer ul{
     list-style: none;
     padding: 0;
@@ -180,6 +190,11 @@ div.items {
     padding: 0 1em;
     border: 1px solid black;
 
+}
+
+div.item img {
+    width: 300px;
+    height: 250px;
 }
 
 div.menu {
@@ -238,6 +253,16 @@ div.fitem {
 
 }
 
+div.timeError {
+    width: 40%;
+    display: flex;
+    flex-direction: row-reverse;
+    color: red;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
 form input {
     width: 150px;
 
@@ -247,9 +272,14 @@ button.form-btn {
     padding: 10px 14px;
     border-radius: 12px;
     font-size: 15px;
-    margin-left: 60%;
-    width: 80%;
 }
+
+button.back-btn {
+    margin-left: 60%;
+
+}
+
+
 
 /*dialogbox css */
 div.dialogbox {
@@ -320,6 +350,11 @@ div.dialogbox > * {
     .navbar{
         padding: 0;
         flex-wrap: wrap;
+    }
+
+    .navbar img.logo{
+        width: 50%;
+        height: 50px;
     }
 
     #menu-icon {
@@ -401,11 +436,13 @@ div.dialogbox > * {
         border: 1px solid blue;
         align-items: left;
         padding-inline: 0%;
+        /* padding-block: 1em; */
     }
 
     div.item {
         padding-left: 5%;
         border: 1px solid green;
+        padding-top: 1em;
     }
 
     /* Header css */
@@ -415,6 +452,17 @@ div.dialogbox > * {
 
     Header div.banner-right {
         display: none;
+    }
+
+    /* Bookingform css */
+
+    div.timeError {
+        width: 100%;
+    }
+
+    button.back-btn {
+        margin-left: 40%;
+    
     }
 
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import flogo from '../assets/flogo.jpg';
+import flogo from '../assets/flogo.jpeg';
 
 const Footer = () => {
 

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Item from './Item';
 import greeksalad from '../assets/greeksalad.jpg';
-import bruchetta from '../assets/bruchetta.jpg';
-import lemondesert from '../assets/lemondesert.jpg';
+import bruchetta from '../assets/bruchetta.jpeg';
+import lemondesert from '../assets/lemondessert.jpg';
 
 const Menu = () => {
     const [food, setfood] = useState([

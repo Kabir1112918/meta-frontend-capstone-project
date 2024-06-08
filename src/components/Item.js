@@ -29,7 +29,7 @@ const Item = (props) => {
     return (
         <div className='item'>
 
-            <img src={props.image} width='90%' height='90%'></img>
+            <img src={props.image}></img>
             <h5 >{name}</h5>
             <h5>{price}</h5>
             <p>{description}</p>
