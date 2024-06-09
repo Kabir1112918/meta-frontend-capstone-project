@@ -192,9 +192,16 @@ div.items {
 
 }
 
+div.item {
+    background-color:  #EDEFEE;
+    border-radius: 16px;
+}
+
 div.item img {
     width: 300px;
     height: 250px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 }
 
 div.menu {
@@ -443,6 +450,7 @@ div.dialogbox > * {
         padding-left: 5%;
         border: 1px solid green;
         padding-top: 1em;
+        
     }
 
     /* Header css */
