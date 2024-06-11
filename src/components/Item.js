@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
-import BookingConfirm from './BookingConfirm';
 import alertIcon from '../assets/alertIcon.png';
 import yesIcon from '../assets/yesIcon.png';
 
@@ -28,10 +27,11 @@ const Item = (props) => {
 
     return (
         <div className='item'>
-            {/* alt={imageAltText} */}
-            <img src={props.image} alt={imageAltText}></img>
-            <h5 >{name}</h5>
-            <h5>{price}</h5>
+            <img className='food-image' src={props.image} alt={imageAltText}></img>
+            <div className='name-price'>
+                <h5 >{name}</h5>
+                <h5>{price}</h5>
+            </div>
             <p>{description}</p>
             <button onClick={openFirstModal}>Order a delivery</button>
 
@@ -40,7 +40,7 @@ const Item = (props) => {
 
             <Modal className='firstModal' isOpen={firstModalIsOpen} onRequestClose={closeFirstModal}>
                 <div className='dialogbox'>
-                    <img src={alertIcon} width='100%' height='100%'></img>
+                    <img src={alertIcon} width='20%' height='20%'></img>
                     <h2>Are you sure, you want to order it?</h2>
                     <p>you won't be able to cancel it.</p>
                     <div className='dialog-btn'>
@@ -52,7 +52,7 @@ const Item = (props) => {
 
             <Modal className='secondModal' isOpen={secondModalIsOpen} onRequestClose={closeSecondModal}>
                 <div className='dialogbox'>
-                    <img src={yesIcon} width='100%' height='100%'></img>
+                    <img src={yesIcon} width='20%' height='20%'></img>
                     <h2>Your order successfully placed.</h2>
                     <p>you will get it within 30 minutes</p>
                     <div className='dialog-btn'>

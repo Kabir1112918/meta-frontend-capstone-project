@@ -5,7 +5,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Bookingform from './components/Bookingform';
 import Menu from './components/Menu';
-import BookingConfirm from './components/BookingConfirm';
 
 
 const App = () => {
@@ -15,9 +14,6 @@ const App = () => {
       <Header/>
       <Menu/>
       <Footer/>
-      {/* <Bookingform/> */}
-      {/* <BookingConfirm/> */}
-      
     </div>
   );
 };

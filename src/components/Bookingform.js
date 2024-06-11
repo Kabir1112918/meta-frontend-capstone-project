@@ -25,16 +25,16 @@ const Bookingform = (props) => {
     event.preventDefault();
 
     const formData = {
-      date: dateRef.current.value || new Date().toISOString().split('T')[0], // Default to today's date if not provided
+      date: dateRef.current.value || new Date().toISOString().split('T')[0],
       time: timeRef.current.value,
-      quantity: quantityRef.current.value || '1', // Default to 1 guest if not provided
-      occasion: occasionRef.current.value || 'Normal', // Default to the first option if not provided
+      quantity: quantityRef.current.value || '1', 
+      occasion: occasionRef.current.value || 'Normal', 
     };
 
     const validationErrors = validateForm(formData);
     if (Object.keys(validationErrors).length === 0) {
       // Form is valid, proceed with submission
-      openModal(); // Open the modal when the form is submitted
+      openModal(); 
       props.closeForm();
       resetForm();
     } else {
@@ -59,15 +59,15 @@ const Bookingform = (props) => {
   };
 
   const handleTimeChange = () => {
-    // Clear the "Time is required" error message when the user selects a time
+    // Clear the "Time is required".
     if (errors.time) {
       setErrors({});
     }
   };
 
   const handleBack = () => {
-    props.closeForm(); // Call the closeForm function passed from parent
-    resetForm(); // Reset the form when going back
+    props.closeForm(); 
+    resetForm(); 
   };
 
   return (
