@@ -13,7 +13,7 @@ const Menu = () => {
         },
         {name:'Bruchetta',
          price:'$5.99',
-         description:'Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. ',
+         description:'Our Bruschetta is made from grilled bread that has been lightly smeared with garlic, delicately seasoned with salt, and drizzled with olive oil.',
          imageAltText: 'Bruchetta',
         },
         {name:'Lemon Dessert',
