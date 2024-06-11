@@ -5,7 +5,7 @@ import alertIcon from '../assets/alertIcon.png';
 import yesIcon from '../assets/yesIcon.png';
 
 const Item = (props) => {
-    const { name, price, description } = props.food;
+    const { name, price, description, imageAltText } = props.food;
     const [firstModalIsOpen, setFirstModalIsOpen] = useState(false);
     const [secondModalIsOpen, setSecondModalIsOpen] = useState(false);
 
@@ -28,13 +28,13 @@ const Item = (props) => {
 
     return (
         <div className='item'>
-
-            <img src={props.image}></img>
+            {/* alt={imageAltText} */}
+            <img src={props.image} alt={imageAltText}></img>
             <h5 >{name}</h5>
             <h5>{price}</h5>
             <p>{description}</p>
             <button onClick={openFirstModal}>Order a delivery</button>
-            
+
 
 
 

@@ -7,7 +7,7 @@ const Footer = () => {
         <footer>
             <div className='holder'>
                 <div className='logo-des'>
-                    <img src={flogo} alt='company logo' width='40%' height='20%'></img>
+                    <img src={flogo} alt='business logo' width='40%' height='20%'></img>
                     <p> Savor the tangy essence of sunshine in every
                         dish at our delightful culinary retreat. Embrace
                         the zestful journey that awaits
