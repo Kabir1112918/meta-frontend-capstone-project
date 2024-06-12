@@ -137,6 +137,7 @@ Footer {
     padding-block: 10px;
     padding-inline: 13% 10%;
     background-color: hsl(60, 36%, 76%);
+    margin-top: 30px;
     
 }
 
@@ -180,6 +181,7 @@ div.items {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    column-gap: 1em;
 
 }
 
@@ -187,16 +189,19 @@ div.item {
     background-color:  #EDEFEE;
     border-radius: 16px;
     padding-inline: 1em;
+    width: fit-content;
+    align-items: center;
 }
 
 div.name-price {
     display: flex;
     justify-content: space-between;
+    width: auto;
 }
 
 div.item img.food-image {
-    width: 300px;
-    height: 250px;
+    width: 280px;
+    height: 200px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
